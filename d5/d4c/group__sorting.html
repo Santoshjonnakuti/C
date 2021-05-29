@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d5/d4c/group__sorting.html','../../');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga4fdb8af29a07ac8f496e49a11bf9f1bd"><td class="memItemLeft" align="right" valign="top"><a id="ga4fdb8af29a07ac8f496e49a11bf9f1bd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#ga4fdb8af29a07ac8f496e49a11bf9f1bd">BEAD</a>(i,  j)&#160;&#160;&#160;beads[i * <a class="el" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a> + j]</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4c/group__sorting.html#ga4fdb8af29a07ac8f496e49a11bf9f1bd">BEAD</a>(i,  j)&#160;&#160;&#160;beads[i * <a class="el" href="../../d0/dcb/group__kohonen__1d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a> + j]</td></tr>
 <tr class="memdesc:ga4fdb8af29a07ac8f496e49a11bf9f1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create easy access of elements from a 2D matrix stored in memory as a 1D array. <br /></td></tr>
 <tr class="separator:ga4fdb8af29a07ac8f496e49a11bf9f1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -170,20 +170,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> i, j, <a class="code" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a>, sum;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> i, j, <a class="code" href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a>, sum;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *beads;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span> (i = 1, <a class="code" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a> = a[0]; i &lt; len; i++)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (a[i] &gt; <a class="code" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a>)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a> = a[i];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span> (i = 1, <a class="code" href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a> = a[0]; i &lt; len; i++)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (a[i] &gt; <a class="code" href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a> = a[i];</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    beads = <a class="code" href="../../d2/ddd/malloc__dbg_8h.html#afdddaa949a93c1ef559a638e98f9c21b">calloc</a>(1, <a class="code" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a> * len);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    beads = <a class="code" href="../../d2/ddd/malloc__dbg_8h.html#afdddaa949a93c1ef559a638e98f9c21b">calloc</a>(1, <a class="code" href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a> * len);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/* mark the beads */</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len; i++)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; a[i]; j++) <a class="code" href="../../d5/d4c/group__sorting.html#ga4fdb8af29a07ac8f496e49a11bf9f1bd">BEAD</a>(i, j) = 1;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a>; j++)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a>; j++)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">/* count how many beads are on each post */</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">for</span> (sum = i = 0; i &lt; len; i++)</div>
@@ -197,23 +197,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; len; i++)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a> &amp;&amp; <a class="code" href="../../d5/d4c/group__sorting.html#ga4fdb8af29a07ac8f496e49a11bf9f1bd">BEAD</a>(i, j); j++)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a> &amp;&amp; <a class="code" href="../../d5/d4c/group__sorting.html#ga4fdb8af29a07ac8f496e49a11bf9f1bd">BEAD</a>(i, j); j++)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            ;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        a[i] = j;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="../../d2/ddd/malloc__dbg_8h.html#a9cc854374299a1dd933bf62029761768">free</a>(beads);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="ttc" id="a_l_c_s_8c_html_af082905f7eac6d03e92015146bbc1925"><div class="ttname"><a href="../../d7/d64/_l_c_s_8c.html#af082905f7eac6d03e92015146bbc1925">max</a></div><div class="ttdeci">int max(int a, int b)</div><div class="ttdoc">@breif max will find the maximum between 2 values</div><div class="ttdef"><b>Definition:</b> LCS.c:106</div></div>
+<div class="ttc" id="agroup__kohonen__2d_html_gaffe776513b24d84b39af8ab0930fef7f"><div class="ttname"><a href="../../d1/d6b/group__kohonen__2d.html#gaffe776513b24d84b39af8ab0930fef7f">max</a></div><div class="ttdeci">#define max(a, b)</div><div class="ttdoc">shorthand for maximum value</div><div class="ttdef"><b>Definition:</b> kohonen_som_topology.c:39</div></div>
 <div class="ttc" id="agroup__sorting_html_ga4fdb8af29a07ac8f496e49a11bf9f1bd"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga4fdb8af29a07ac8f496e49a11bf9f1bd">BEAD</a></div><div class="ttdeci">#define BEAD(i, j)</div><div class="ttdoc">Create easy access of elements from a 2D matrix stored in memory as a 1D array.</div><div class="ttdef"><b>Definition:</b> bead_sort.c:16</div></div>
 <div class="ttc" id="amalloc__dbg_8h_html_a9cc854374299a1dd933bf62029761768"><div class="ttname"><a href="../../d2/ddd/malloc__dbg_8h.html#a9cc854374299a1dd933bf62029761768">free</a></div><div class="ttdeci">#define free(ptr)</div><div class="ttdoc">This macro replace the standard free function with free_dbg.</div><div class="ttdef"><b>Definition:</b> malloc_dbg.h:26</div></div>
 <div class="ttc" id="amalloc__dbg_8h_html_afdddaa949a93c1ef559a638e98f9c21b"><div class="ttname"><a href="../../d2/ddd/malloc__dbg_8h.html#afdddaa949a93c1ef559a638e98f9c21b">calloc</a></div><div class="ttdeci">#define calloc(elemCount, elemSize)</div><div class="ttdoc">This macro replace the standard calloc function with calloc_dbg.</div><div class="ttdef"><b>Definition:</b> malloc_dbg.h:22</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d4c/group__sorting_ga2fb01e00dedb437a42010f6309e7eba8_cgraph.svg" width="184" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="gad7ed8cc4603f500d610054680d28b971"></a>
